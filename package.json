@@ -1,0 +1,22 @@
+{
+  "name": "picture-dictionary",
+  "productName": "قاموس مصوّر",
+  "version": "1.0.0",
+  "description": "قاموس مصوّر إنجليزي-عربي",
+  "main": "app.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+  "devDependencies": {
+    "electron": "^33.0.0",
+    "electron-builder": "^25.0.0"
+  },
+  "build": {
+    "appId": "com.example.picturedictionary",
+    "files": ["app.js", "index.html", "dictionary.js"],
+    "win": { "target": "nsis" },
+    "mac": { "target": "dmg" },
+    "linux": { "target": "AppImage" }
+  }
+}
